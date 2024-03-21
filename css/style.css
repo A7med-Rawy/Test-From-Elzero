@@ -1,0 +1,200 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: rgb(241 241 241);
+    --secander-color:rgb(255 255 255);
+}
+body {
+    font-family: "Red Hat Display", sans-serif; 
+}
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+.contianer {
+    width: 80%;
+    margin: 0 auto;
+}
+ul li {
+    list-style: none;
+}
+header .contianer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+header .contianer .logo  h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+}
+header .contianer ul {
+    display: flex;
+}
+header .contianer ul  li {
+    padding: 20px;
+}
+header .contianer ul  a:hover {
+    color: burlywood;
+}
+
+.contect .contianer {
+    background-color: var(--main-color);
+    text-align: center;
+
+}
+.contect .contianer .logo {
+    padding: 60px 0;
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    
+    
+}
+.contect .contianer .logo h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+.contect .contianer .logo h1 span {
+    color: rgb(3 169 244);
+}
+.contect .contianer .logo p {
+    padding: 20px;
+    line-height: 2;
+}
+.services .contianer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.services .contianer .content h3 {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 24px;
+
+}
+.services .contianer .content p {
+    line-height: 1.6;
+    font-weight: normal;
+    font-size: 18px;
+    color: #777;
+}
+.about-us {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--main-color);
+}
+.about-us .contianer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.about-us .contianer .img img {
+    width: 500px;
+}
+.about-us .contianer .text h2{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-us .contianer .text p{
+    font-size: 16px;
+    line-height: 2;
+    color: #777;
+}
+
+.button {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.button .contianer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.button .contianer div {
+    padding: 30px 100px;
+    text-align: center;
+    color: white;
+}
+.button .contianer div h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.button .contianer div p {
+    font-size: 12px;
+}
+.button .contianer div.one{
+    background-color: #b33939;
+}
+.button .contianer div.two{
+    background-color: #227093;
+}
+.button .contianer div.three {
+    background-color: #218c74;
+}
+.skill {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--main-color);
+    text-align: center;
+}
+.skill h2 {
+    margin-bottom: 30px;
+}
+.skill .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+.skill .content> div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.skill .content> div p {
+    width: 15%;
+}
+.skill .content> div div {
+    background-color: #ddd;
+    width: 80%;
+}
+.skill .content> div div span {
+    background-color: #03a9f4;
+    display: block;
+    height: 100%;
+    position: relative;
+}
+.skill .content> div div span::after {
+    content: attr(data-attre);
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    right: 5px;
+    top: 3px;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+}
+footer .contianer {
+    display: flex;
+    justify-content: space-between;
+}
+footer .contianer span {
+    color: #03a9f4;
+}

@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #f3f3f3;
+    --secondary-color: #feb028;
+    --thirty-color: #4fc2f6;
+}
+body {
+    background-color: var(--main-color);
+    text-align: center;
+}
+h1 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    padding: 10px 20px;
+    background-color: #4fc2f6;
+    width: fit-content;
+    margin: 40px auto;
+    border-radius: 15px;
+}
+a {
+    text-decoration: none;
+    color: var(--thirty-color);
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease; 
+    background-color: var(--secondary-color);
+    display: block;
+    width: fit-content;
+    margin: 0 auto 20px;
+
+}
+a:hover {
+    background-color: var(--thirty-color);
+    color: white;
+    transform: scale(1.3);
+}
+header .contianer {
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    background-color: #ddd;
+    box-shadow: 0px 3px 4px 3px #777;
+    border-radius: 30px;
+}
+header .contianer .name {
+    font-size: 30px;
+    font-weight: bold;
+    word-spacing: 0.5px;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 0 auto 50px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 11px;
+    box-shadow: 0px 3px 4px 3px #777;
+}
+
+@keyframes blinkCursor {
+    50% {
+      border-right-color: transparent;
+    }
+  }
+  
+  @keyframes typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 6.2em;
+    } /* adjust width based on content */
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+  
+  .terminal-loader {
+    border: 0.1em solid #333;
+    background-color: #1a1a1a;
+    color: #0f0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    padding: 1.5em 1em;
+    width: 12em;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .terminal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.5em;
+    background-color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0 0.4em;
+    box-sizing: border-box;
+  }
+  
+  .terminal-controls {
+    float: right;
+  }
+  
+  .control {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 0.4em;
+    border-radius: 50%;
+    background-color: #777;
+  }
+  
+  .control.close {
+    background-color: #e33;
+  }
+  
+  .control.minimize {
+    background-color: #ee0;
+  }
+  
+  .control.maximize {
+    background-color: #0b0;
+  }
+  
+  .terminal-title {
+    float: left;
+    line-height: 1.5em;
+    color: #eee;
+  }
+  
+  .text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2em solid green; /* Cursor */
+    animation: typeAndDelete 4s steps(11) infinite,
+      blinkCursor 0.5s step-end infinite alternate;
+    margin-top: 1.5em;
+  }
+  
